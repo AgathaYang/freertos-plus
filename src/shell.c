@@ -143,7 +143,8 @@ void help_command(int n,char *argv[]){
 void test_command(int n, char *argv[]) {
     int handle;
     int error;
-
+    char input_data[128];
+    char *buffer=NULL;
     fio_printf(1, "\r\n");
 
     handle = host_action(SYS_OPEN, "output/syslog", 8);
@@ -151,8 +152,8 @@ void test_command(int n, char *argv[]) {
         fio_printf(1, "Open file error!\n\r");
         return;
     }
-
-    char *buffer = "Test host_write function which can write data to output/syslog\n";
+	fio_read(0,input_data,127); 
+    buffer = input_data;
     error = host_action(SYS_WRITE, handle, (void *)buffer, strlen(buffer));
     if(error != 0) {
         fio_printf(1, "Write file error! Remain %d bytes didn't write in the file.\n\r", error);

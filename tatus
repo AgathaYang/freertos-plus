@@ -1,0 +1,475 @@
+[33mcommit 8d7613869cdb70dfc352b9559ce6db0483996cab[m
+Author: Jim Huang <jserv@0xlab.org>
+Date:   Thu Sep 25 18:10:01 2014 +0800
+
+    main: disable system logger because of its failure
+
+[33mcommit 2fd2f292dbc129f2b4d717a393eb510324a025e8[m
+Author: Jim Huang <jserv@0xlab.org>
+Date:   Thu Sep 25 18:05:02 2014 +0800
+
+    mk: revert to gdb
+
+[33mcommit cebcce2b1d95ae6700baacaf84732760107f5bea[m
+Author: Jim Huang <jserv@0xlab.org>
+Date:   Thu Sep 25 17:58:23 2014 +0800
+
+    update contributor list
+
+[33mcommit f30f224392b5d561f6497420745859bb97729b6c[m
+Author: Jim Huang <jserv@0xlab.org>
+Date:   Thu Sep 25 17:56:21 2014 +0800
+
+    CMSIS: workaround for invalid instructions reported by gas
+
+[33mcommit 82f57d9b8d32550e65296a58b08e0e7278828468[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Fri Mar 21 14:36:51 2014 +0800
+
+    host: Add function pointer to wrap the host functions.
+
+[33mcommit 5452f9a1687bed59a8615c66b7b2c26e64551cba[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Fri Mar 21 14:02:45 2014 +0800
+
+    gdb: Add init gdbscript and now qemu will quit when gdb quit.
+
+[33mcommit 68bddb935d1f62bfd3f8ef34ac603465f2f26f1d[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Fri Mar 21 13:56:05 2014 +0800
+
+    gdb: Modify qemudbg. Now will use gdbtui and run in same window.
+
+[33mcommit bc809862f6a74f6a94be4d40ca1cf17043583754[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Fri Mar 21 13:37:52 2014 +0800
+
+    test: Try to abstract host command.
+
+[33mcommit 8f4ac8c406c4158884e73e4a965c1eb2d465cd83[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 15:04:14 2014 +0800
+
+    task: Add a new task `system_logger` which could record system info.
+
+[33mcommit 1bc8b30d68f7f2a7f42b462b8da5f6ae0778ad78[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 14:07:22 2014 +0800
+
+    cmd: Add a test command which used to test new host function.
+
+[33mcommit 27188513e3430d4547721c674129cc156486357a[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 14:06:12 2014 +0800
+
+    host: Modify argument passing policy. Now will use previous param union to pass arguments.
+
+[33mcommit c2b55f28d8463d0252ec466d458002672e450739[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 13:37:36 2014 +0800
+
+    host: Add SYS_OPEN, SYS_CLOSE, SYS_WRITE.
+
+[33mcommit b05b456b1941bf931caa509d46b69eeb068c2953[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 13:03:58 2014 +0800
+
+    CLI: Make it looks better.
+
+[33mcommit 7da979013c6b41c50240b7942068900f76efc0c4[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 12:57:45 2014 +0800
+
+    ps: Add tag name.
+
+[33mcommit 28e1c4758735e496917aa6383b592509b2cf167e[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 12:10:22 2014 +0800
+
+    host: Now can pass the full command to host include arguments.
+
+[33mcommit c60253ec42fc4cb5bf156e3ff299607f4306f740[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 10:41:13 2014 +0800
+
+    Update .gitignore. Ignore output directory.
+
+[33mcommit b32c8247c0cea3faf988d4290ee4528d444de5d1[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 10:40:46 2014 +0800
+
+    Makefile: Add tmp directory used to store temp output.
+
+[33mcommit 8c669c58206be04b3df36128d89b182eeb160e70[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 10:39:02 2014 +0800
+
+    Fix: Missing qemu parameter.
+
+[33mcommit a97ca4704ca48e51d48d1f4a61c4d9579efe4202[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 10:36:42 2014 +0800
+
+    fix: Missing cflags.
+
+[33mcommit 9775cd17459375dcebcae457c26f088889eb066b[m
+Merge: a685ace d61e0c7
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 00:34:28 2014 +0800
+
+    Merge branch 'build'
+
+[33mcommit a685acea7c9a28066728615d715fe4177aa5017e[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 00:32:51 2014 +0800
+
+    Update .gitignore. Ignore build directory, *.swp and *~ files.
+
+[33mcommit d61e0c77b7581e87edbd8ffdb616a97eb65e0595[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 00:31:35 2014 +0800
+
+    Fix: Section name error.
+
+[33mcommit 1cdde9c0806ab23b3dcbef2301bb895a642e3f35[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 00:30:55 2014 +0800
+
+    Fix: return type and non define function.
+
+[33mcommit ffa9678d1c7772a6ca8f23458970cffdbbae3ebd[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Thu Mar 20 00:29:37 2014 +0800
+
+    Makefile: Improve build system.
+
+[33mcommit 1e8ada8a230a27837db3c89ad2848bc7cbc4129e[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Wed Mar 19 23:25:06 2014 +0800
+
+    Reorganize file structure.
+
+[33mcommit be2c8d4410df847a2e46d1eed2a0627d1a438f8c[m
+Author: Rampant <rampant1018@gmail.com>
+Date:   Wed Mar 19 23:24:02 2014 +0800
+
+    Reorganize file structure.
+
+[33mcommit 339d26b63bbfa92ba15b6d9b81b66455f313925f[m
+Author: Jim Huang <jserv@0xlab.org>
+Date:   Tue Mar 18 19:03:18 2014 +0800
+
+    remove non-working target
+
+[33mcommit de2fe1ebbec983a60bfbb7380bbc2123768d663b[m
+Author: Jim Huang <jserv@0xlab.org>
+Date:   Tue Mar 18 18:58:19 2014 +0800
+
+    Add .gitignore
+
+[33mcommit 530d3d033c52b5da3b295a150e55fc3f9ce3e3e5[m
+Author: Jim Huang <jserv@0xlab.org>
+Date:   Tue Mar 18 18:51:24 2014 +0800
+
+    update contributor list
+
+[33mcommit e927920b4128e261658fd1b9ac9ddd1b818ffd05[m
+Author: Tim <tim37021@gmail.com>
+Date:   Tue Oct 29 16:25:59 2013 +0800
+
+    Add -ffreestanding to disable all built-in functions
+
+[33mcommit b643e606a0fb29d622b2b2d89762ec020790f0b3[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sat Oct 19 18:07:58 2013 +0800
+
+    X and x specifier is different.
+
+[33mcommit 9c9ed720f3831b586db8ea1c4f96a00cddcdcf0e[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sat Oct 19 17:51:07 2013 +0800
+
+    Delete DBGPRINTF in heap_ww.c
+
+[33mcommit a234e37b5aa2f2822c69b73d8cb48860293e952c[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Tue Oct 22 13:37:22 2013 +0800
+
+    Use upper case to define macro MKCL
+
+[33mcommit 002d36a5de234a32723c4be061c8c4ec1cfe26da[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Tue Oct 22 13:35:43 2013 +0800
+
+    HEAP_IMPLE->HEAP_IMPL
+
+[33mcommit 8fe1d4f825d838771bee49595822a978b1087aae[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Tue Oct 22 13:32:42 2013 +0800
+
+    Rewrite prng with assembly.
+
+[33mcommit d0183ba1f198305dbac0188f5bb9b403becba821[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Tue Oct 22 13:32:21 2013 +0800
+
+    Change implementation of heap
+
+[33mcommit 58c01e6a0b8e79faa8a6939e2372d297115107fa[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Mon Oct 21 01:24:04 2013 +0800
+
+    Add mmtest.c to make list
+
+[33mcommit 2e875ae72e806c8c189b349169b0e5324745838f[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Mon Oct 21 01:23:24 2013 +0800
+
+    Port malloc test from hack_malloc
+
+[33mcommit cab7c05aa95ae052c345725de464e432e17b026b[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Mon Oct 21 01:22:47 2013 +0800
+
+    Use macro to initialize cl array
+
+[33mcommit f9027480a2fe57d69b302dc4b7427841e7735407[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Mon Oct 21 01:22:12 2013 +0800
+
+    Add more RAM
+
+[33mcommit b617121bfa8ffd31af6dfe29a27e491532fe7e65[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Mon Oct 21 01:18:35 2013 +0800
+
+    fio_printf looks x and X specifiers as the same thing
+    %x and %X both output Hex in upper case
+    I wish to make printf easy to implement :-p
+    I will improve this at later commit
+
+[33mcommit 27235201618448b73a7a6043a321ee707be648fe[m
+Merge: cfb14ca 45d171c
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Sun Oct 20 00:52:24 2013 +0800
+
+    Merge branch 'master' of github.com:tim37021/freertos
+
+[33mcommit cfb14caae3b9c7acee78f249bf2770ad234aca03[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Sun Oct 20 00:30:06 2013 +0800
+
+    Use macro to define command list
+
+[33mcommit 45d171ccd88a56d193cd667200ac36a1cd3a0758[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sat Oct 19 15:44:31 2013 +0800
+
+    Host command now display exit code
+
+[33mcommit 0f62d5811c4ea8b86481d4575ea194bad649a96c[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sat Oct 19 15:42:22 2013 +0800
+
+    Discard const qualifier in type param
+
+[33mcommit 146d48c8ed67b7baa218a723fc4b9c5a9da8b274[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sat Oct 19 15:41:17 2013 +0800
+
+    fix bug in fio_printf
+
+[33mcommit 8bb5efe5d6267dd2292f349f5dbecc2e75ce5b2b[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Fri Oct 18 22:13:37 2013 +0800
+
+    Add host command
+
+[33mcommit 176bbe9c31667ed29f35e9a3be3d17c356cb5319[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Fri Oct 18 22:13:04 2013 +0800
+
+    Add host.c in make list
+
+[33mcommit 1b012d64a4a80c3ea6f938788a3e61db736321d6[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Fri Oct 18 22:12:48 2013 +0800
+
+    Add host system call
+
+[33mcommit 3df2b1ed58bf0d3cd292c1df9f2e02947c7264ef[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Thu Oct 17 19:20:23 2013 +0800
+
+    Add help command!
+
+[33mcommit 8555d33302ce41475a86d664d121bc3000e05d47[m
+Author: Tim Hsu <tim37021@gmail.com>
+Date:   Thu Oct 17 19:20:15 2013 +0800
+
+    Enable qemu semihosting
+
+[33mcommit 7055caab797dca4724c8b4b0dc1a7cc62e87189d[m
+Author: Tim <tim37021@gmail.com>
+Date:   Tue Oct 15 15:34:01 2013 +0800
+
+    Fix serious bug in sprintf
+
+[33mcommit 0ff00ac6c767db1270a7722ed51a25c6ef2459a8[m
+Author: Tim <tim37021@gmail.com>
+Date:   Tue Oct 15 14:52:11 2013 +0800
+
+    Add ps command
+
+[33mcommit 3abedf8bff26e92973999be26356cd7f8fe07923[m
+Author: Tim <tim37021@gmail.com>
+Date:   Tue Oct 15 14:51:55 2013 +0800
+
+    Enable configUSE_TRACE_FACILITY
+
+[33mcommit 10a22652b2cd2a340e1cd92565e6674c7925bce9[m
+Author: Tim <tim37021@gmail.com>
+Date:   Tue Oct 15 14:51:21 2013 +0800
+
+    Implement sprintf for vTaskList
+
+[33mcommit 173dc950bb62b12d133902ea3dc3643b4cb5a43f[m
+Author: Tim <tim37021@gmail.com>
+Date:   Tue Oct 15 14:33:20 2013 +0800
+
+    Add filedump function, and cat command.
+
+[33mcommit 30c39de0c0aaa89b9a0c33cc12cd54c71ea61f47[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Tue Oct 15 01:36:41 2013 +0800
+
+    Add manual directory and freertos manual
+
+[33mcommit 949c584c4cd00e521bb5f130e19c2e83194d652b[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Tue Oct 15 01:36:08 2013 +0800
+
+    Complete man command.
+
+[33mcommit 7c0b3e5ed45f9754c546f07ff45424cb08de3c42[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Tue Oct 15 01:35:17 2013 +0800
+
+    Add OPENFAIL MACRO
+
+[33mcommit eb6b0f6489503b7e6c0baddb525249d7f2ec45e5[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Mon Oct 14 17:47:37 2013 +0800
+
+    Design a more readable shell handling mechanism.
+
+[33mcommit 5e377cd5b74c46752e3819ebf62aaf688874d695[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Mon Oct 14 17:46:40 2013 +0800
+
+    Shell commands will be put in shell.c
+
+[33mcommit b9fcf0063380400f94c3b7ca3a13dd7269ba03ae[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Mon Oct 14 17:46:16 2013 +0800
+
+    Add shell.h shell.c to make list
+
+[33mcommit e043ce312e03733ef35c9033256044db3bc3ada3[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Mon Oct 14 17:45:52 2013 +0800
+
+    Add strcmp function.
+
+[33mcommit 1c60a3e499af6049513c5e0320bc9e796db7c202[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Mon Oct 14 11:12:21 2013 +0800
+
+    Refine fio_read, now support BACKSPACE.
+
+[33mcommit d30e7ec7dbb5649e34d63c7f342c4c9d5e7b1baa[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Sun Oct 13 23:26:29 2013 +0800
+
+    Implement a shell(no command available yet)
+
+[33mcommit bb4e8ada1368d5444e49e89c51ba775014cb5477[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Sun Oct 13 23:26:11 2013 +0800
+
+    Rewrite fio_read with more elegant style
+
+[33mcommit b9d9433bc6d36e4bd020340524cdefed9aedb64e[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Sun Oct 13 23:24:16 2013 +0800
+
+    Implement fio_printf, itoa, fix the bug of strlen
+
+[33mcommit 713f134f8554df931eb05895d98be07b3457a9a2[m
+Author: tim37021 <tim37021@gmail.com>
+Date:   Sun Oct 13 23:24:05 2013 +0800
+
+    Add dependency of clib.c and fio.c to Makefile
+
+[33mcommit 98635d1c2bdc8cb81aa3d15ef7dfb6cb1699071d[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sun Oct 13 20:17:00 2013 +0800
+
+    Rearrange clib.o in Makefile
+
+[33mcommit 2d83b430cecc5e0acaf73f344573c9108115c3c6[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sun Oct 13 20:16:35 2013 +0800
+
+    Correct wrong prototype of send_byte
+
+[33mcommit 05be0fff2eb56f4ae4c5986e4e81c160ddbadca1[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sun Oct 13 14:07:25 2013 +0800
+
+    Add my version of c library
+
+[33mcommit b38aee166fd016740abd1e483938d396fb409cd4[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sun Oct 13 14:06:38 2013 +0800
+
+    Fix some warning after enabling warning check.
+
+[33mcommit 07e8fbfed447ff75c1d4b1dea5f08f47127e543a[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sun Oct 13 14:06:06 2013 +0800
+
+    Add -std=c99 -pedantic for warning check
+
+[33mcommit 8ace85299e27c3f13aa31df085696b577c543251[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sun Oct 13 01:25:34 2013 +0800
+
+    Delete read_romfs_task
+
+[33mcommit 2970a78fbda96348fbeaa66d1a18543d4d922ac7[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sun Oct 13 01:21:11 2013 +0800
+
+    Enable rx, now USART2_IRQHandler will be called when inputing
+
+[33mcommit a26f95d30f54e543c1e94fc5dfd68256fb942157[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sat Oct 12 17:21:15 2013 +0800
+
+    Add serial input function, still not working
+    issue:
+    Program will be stuck on calling xQueueReceive in recv_byte
+    USART2_IRQHandler will not be call when user input
+
+[33mcommit a00dcddf9fec2815b40e5dbe649291677ed9656f[m
+Author: Tim <tim37021@gmail.com>
+Date:   Sat Oct 12 17:20:15 2013 +0800
+
+    Correct the path of QEMU_STM32
+
+[33mcommit 3ed7460251077ee63e8bb0e28bd310710a30a6e6[m
+Author: Jim Huang <jserv@0xlab.org>
+Date:   Tue Oct 8 18:19:11 2013 +0800
+
+    initial import from customized FreeRTOS tree
