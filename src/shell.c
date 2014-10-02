@@ -143,7 +143,8 @@ void help_command(int n,char *argv[]){
 void test_command(int n, char *argv[]) {
     int handle;
     int error;
-    char input_data[128];
+    int i, len = 0;
+    char input_data[]={0};
     char *buffer=NULL;
     fio_printf(1, "\r\n");
 
@@ -152,8 +153,17 @@ void test_command(int n, char *argv[]) {
         fio_printf(1, "Open file error!\n\r");
         return;
     }
-	fio_read(0,input_data,127); 
+    
+    for(i = 1; i < n; i++) {
+            memcpy(&input_data[len], argv[i], strlen(argv[i]));
+            len += (strlen(argv[i]) + 1);
+            input_data[len - 1] = ' ';
+        }
+    input_data[len - 1] = '\0';
+    
+    
     buffer = input_data;
+
     error = host_action(SYS_WRITE, handle, (void *)buffer, strlen(buffer));
     if(error != 0) {
         fio_printf(1, "Write file error! Remain %d bytes didn't write in the file.\n\r", error);
