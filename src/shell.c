@@ -8,7 +8,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "host.h"
-
+extern const unsigned char _sromfs;
 typedef struct {
 	const char *name;
 	cmdfunc *fptr;
@@ -60,7 +60,7 @@ int parse_command(char *str, char *argv[]){
 }
 
 void ls_command(int n, char *argv[]){
-
+     romfs_get_all_filename(&_sromfs);	
 }
 
 int filedump(const char *filename){

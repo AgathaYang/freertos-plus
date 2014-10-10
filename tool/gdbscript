@@ -4,3 +4,5 @@ target remote :3333
 b main
 
 c
+
+b fs_open

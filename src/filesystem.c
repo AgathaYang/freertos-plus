@@ -45,7 +45,7 @@ int fs_open(const char * path, int flags, int mode) {
     while (path[0] == '/')
         path++;
     
-    slash = strchr(path, '/');
+    slash = strchr(path, '/'); //search the character in the string(return the position of the first matched character)
     
     if (!slash)
         return -2;
